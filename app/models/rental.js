@@ -1,5 +1,5 @@
 import DS from 'ember-data';
-
+// Schema for rental object
 export default DS.Model.extend({
   owner: DS.attr(),
   city: DS.attr(),

@@ -1,4 +1,5 @@
 {{#if addNewRental}}
+  <!-- Form that creates a new rental object  -->
   <h1>New Rental</h1>
   <div>
     <form>
@@ -31,10 +32,11 @@
         <label for="price">Rental Price</label>
         ${{input value=price id="price"}} per month
       </div>
-
+      <!-- Save saveRental1 to new-rental.js as new-rental2 -->
       <button {{action 'saveRental1'}}>Save</button>
     </form>
   </div>
 {{else}}
+  <!-- Show/Hide new rental form -->
   <button {{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}

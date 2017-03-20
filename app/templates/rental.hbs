@@ -1,5 +1,8 @@
+ <!-- Model comes from rental.js a individual record based on rental id clicked on -->
 <h2>More information about {{model.owner}}'s {{model.type}}</h2>
 
+<!-- Adds component of  update-rental / data down - json object model as rental / action up - update as update which comes from update-tile.hbs -->
 {{update-rental rental=model update="update"}}
 
+<!-- Add rental-detail component / data down - json object model as rental / action up - calls destroyRental action/method on rental.js comes from rental detail.js -->
 {{rental-detail rental=model destroyRental="destroyRental"}}
