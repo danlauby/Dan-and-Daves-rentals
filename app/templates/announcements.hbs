@@ -1,0 +1,8 @@
+
+  <!-- Loop through each announcement of the model  -->
+  {{#each model as |announcement|}}
+    <div class="panel panel-info">
+    <!-- Create a new announcement tile and pass it announcement object as announcement -->
+      {{announcement-tile announcement=announcement}}
+    </div>
+  {{/each}}

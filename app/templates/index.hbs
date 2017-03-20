@@ -4,7 +4,10 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model as |rental|}}
-    {{rental-tile rental=rental}}
+    <div class="panel panel-info">
+      {{rental-tile rental=rental}}
+
+    </div>
   {{/each}}
 </ul>
 
@@ -12,3 +15,5 @@ We hope you find exactly what you're looking for in a place to stay.
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
+{{#link-to 'announcements'}}Announcements{{/link-to}}
