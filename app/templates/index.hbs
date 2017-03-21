@@ -3,7 +3,7 @@
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
-  {{#each model as |rental|}}
+  {{#each rentals as |rental|}}
     <div class="panel panel-info">
       {{rental-tile rental=rental}}
 
@@ -12,6 +12,14 @@ We hope you find exactly what you're looking for in a place to stay.
 </ul>
 
 {{new-rental saveRental2="saveRental3"}}
+
+<h2>All announcements</h2>
+
+<ul>
+  {{#each announcements as |announcement|}}
+    <li>{{announcement.text}}</li>
+  {{/each}}
+</ul>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
